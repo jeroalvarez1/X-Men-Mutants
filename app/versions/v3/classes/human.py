@@ -1,4 +1,4 @@
-class HumanService:
+class Human:
 
     def __init__(self):
         self._dna = None
@@ -82,4 +82,5 @@ class HumanService:
                 directional_moves = self._can_move_in_direction(row, col, equal_sequences, row_size, col_size)
                 self._check_directional_coincidences(row, col, directional_moves, equal_sequences, dna)
         self._is_mutant = self._identical_sequences >= 2
+
         return self._is_mutant
