@@ -4,9 +4,6 @@ from fastapi.responses import RedirectResponse
 from app.versions.v2.routers import human as v2_human
 from app.versions.v3.routers import human as v3_human
 from app.database import engine, Base
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 Base.metadata.create_all(bind=engine)
