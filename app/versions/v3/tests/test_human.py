@@ -17,7 +17,7 @@ class TestHuman(unittest.TestCase):
         self.human._dna = ["ATCG", "TAGC", "CGT", "GCAT"]
         with self.assertRaises(Exception) as context:
             self.human._validations()
-        self.assertTrue("DNA must be a square matrix" in str(context.exception))
+        self.assertTrue("DNA must be a square matrix quitar" in str(context.exception))
 
     def test_is_mutant_with_mutant_dna(self):
         dna = ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
