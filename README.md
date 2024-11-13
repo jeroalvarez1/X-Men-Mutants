@@ -50,6 +50,8 @@ La API está desplegada en un servidor web accesible públicamente.
 
 ### Endpoints Disponibles
 
+###### Nota: para cambiar de versión en el despliegue local, debe modificar en el archivo .env la variable API_VERSION a la verision deseada, v2 o v3. Ej: API_VERSION=v3. Por default en servidor se enceuntra en v3.
+
 #### V2
 
 ##### 1. **Verificar si el ADN es de un mutante**
